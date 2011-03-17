@@ -5,4 +5,11 @@
     <struts>
     <constant name="struts.custom.118n.resources" value="messageResource"/>
     <constant name="struts.118n.ecoding" value="GBK"/>
+    <package name="default" extends="struts-default">
+    <action name="login" class="LoginAction">
+    <result name="input">/login.jsp</result>
+    <result name="error">/error.jsp</result>
+    <result name="success">/Welcome.jsp</result>
+    </action>
+    </package>
     </struts>

@@ -5,11 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title><s:text name="succTip"></s:text></title>
+<title><s:text name="succPage"/></title>
 </head>
 <body>
-<s:text name="succTip">
-<s:param>${sessionScope.user}</s:param>
-</s:text><br>
+<s:text name="Welcome"/>
+<s:label name="username"/><br>
 </body>
 </html>
