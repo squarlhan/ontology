@@ -9,5 +9,6 @@
 </head>
 <body>
 <s:text name="failTip"/>
+
 </body>
 </html>
