@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.custom.118n.resources" value="messageResource" />
+	<constant name="struts.118n.ecoding" value="GBK" />
+	<constant name="conststruts.devMode" value="true" />
+	<package name="proLogin" extends="struts-default">
+		<action name="login" class="LoginRegistAction">
+			<result name="input">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="success">/Welcome.jsp</result>
+			<result name="regist">/regist.jsp</result>
+		</action>
+		<action name="regist" class="RegistAction">
+			<result name="success">/Welcome.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+</struts>
