@@ -6,6 +6,7 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginRegistAction extends ActionSupport 
 {
 	private static final String REGIST="regist";
+	private static final String FORGET = "forget";
 	private String username;
 	private String password;
 	private String tip;
@@ -34,18 +35,16 @@ public class LoginRegistAction extends ActionSupport
 	{
 		this.tip = tip;
 	}
-	//定义处理注册的regist方法
+	
 	public String regist() throws Exception
 	{
-		//ActionContext.getContext().getSession().put("username", getUsername());
-		//setTip("恭喜您，"+getUsername()+",您已经注册成功！");
 		return REGIST;
 	}
-	//定义重置方法reset
-	public String reset() throws Exception
+	public String forgetPassword() throws Exception
 	{
-		return INPUT;
+		return FORGET;
 	}
+	
 	//定义处理用户请求的execute方法
 	public String execute() throws Exception
 	{

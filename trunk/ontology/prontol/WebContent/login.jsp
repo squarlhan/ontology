@@ -12,9 +12,15 @@
 	function login() {
 		targetForm = document.forms[0];
 		targetForm.action = "login!execute";
-	}	
+
+	}
+	function forgetpassword() {
+		targetForm = document.form[0];
+		targetForm.action = "login!forgetPassword";
+
+	}
 </script>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
 <title><s:text name="loginPage" /></title>
 </head>
 <body>
@@ -23,7 +29,9 @@
 	<s:password name="password" label="ÃÜÂë" />
 	<s:submit value="µÇÂ¼" onClick="login()" />
 	<s:submit value="×¢²á" onClick="regist()" />
-	<s:reset value="ÖØÖÃ"/>
+
+	<s:submit value="Íü¼ÇÃÜÂë" onClick="forgetpassword()" />
+	<s:reset value="ÖØÖÃ" />
 </s:form>
 
 </body>
