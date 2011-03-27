@@ -69,8 +69,7 @@ public class RegistAction extends ActionSupport {
 			ctx.put("tip", "服务器提示：恭喜您已经成功注册，自动登录登录");
 			return SUCCESS;
 		} else {
-			ctx.put("tip", "您的确认密码与密码不同");
-			return ERROR;
+			return INPUT;
 		}
 	}
 }

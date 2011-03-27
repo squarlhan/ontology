@@ -27,6 +27,12 @@
 			<message>4-25字母数字</message>
 		</field-validator>
 	</field>
+	<field name="repassword">
+		<field-validator type="fieldexpression">
+			<param name="expression"><![CDATA[againpassword==password]]></param>
+			<message>确认密码与密码不相同</message>
+		</field-validator>
+	</field>
 
 	<field name="birth">
 		<field-validator type="date">
