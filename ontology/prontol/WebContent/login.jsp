@@ -14,9 +14,9 @@
 		targetForm.action = "login!execute";
 
 	}
-	function forgetpassword() {
-		targetForm = document.form[0];
-		targetForm.action = "login!forgetPassword";
+	function forgetPassword() {
+		targetForm = document.forms[0];
+		targetForm.action = "login!forgetPassword" ;
 
 	}
 </script>
@@ -29,10 +29,8 @@
 	<s:password name="password" label="ÃÜÂë" />
 	<s:submit value="µÇÂ¼" onClick="login()" />
 	<s:submit value="×¢²á" onClick="regist()" />
-
-	<s:submit value="Íü¼ÇÃÜÂë" onClick="forgetpassword()" />
+	<s:submit value="Íü¼ÇÃÜÂë" onClick="forgetPassword()" />
 	<s:reset value="ÖØÖÃ" />
 </s:form>
-
 </body>
 </html>

@@ -8,7 +8,7 @@
 <title><s:text name="findPage" /></title>
 </head>
 <body>
-<s:form action="regist.action">
+<s:form action="login.action">
 	<s:textfield name="username" label="用户名" />
 	<s:textfield name="surname" label="昵称" />
 	<s:textfield name="question" label="安全提问" />
