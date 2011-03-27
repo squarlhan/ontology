@@ -18,5 +18,14 @@
 			<result name="error">/error.jsp</result>
 			<result name="input">/regist.jsp</result>
 		</action>
+		<action name="adminlogin" class="AdminLoginAction">
+			<result name="error">/error.jsp</result>
+			<result name="success">/search.jsp</result>
+			<result name="forget">/forgetPassword.jsp</result>
+		</action>
+		<action name="search" class="SearchAction">
+			<result name="error">/error.jsp</result>
+			<result name="success">/success.jsp</result>
+		</action>
 	</package>
 </struts>
