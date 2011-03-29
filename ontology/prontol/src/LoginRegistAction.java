@@ -4,6 +4,7 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginRegistAction extends ActionSupport {
 	private static final String REGIST = "regist";
 	private static final String FORGET = "forget";
+	private static final String CHANGE = "change";
 	private String username;
 	private String password;
 	private String tip;
@@ -39,6 +40,9 @@ public class LoginRegistAction extends ActionSupport {
 	public String forgetPassword() throws Exception {
 		return FORGET;
 	}
+	/*public String changepass() throws Exception{
+		return CHANGE;
+	}*/
 
 	public String execute() throws Exception {
 		ActionContext ctx = ActionContext.getContext();
