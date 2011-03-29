@@ -15,7 +15,7 @@
 	</field>
 	<field name="repassword">
 		<field-validator type="fieldexpression" short-circuit="true">
-			<param name="expression"><![CDATA["againpassword"=="password"]]></param>
+			<param name="expression"><![CDATA[repassword==password]]></param>
 			<message>确认密码与密码不相同</message>
 		</field-validator>
 	</field>
