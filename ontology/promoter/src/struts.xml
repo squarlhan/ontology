@@ -22,5 +22,15 @@
     		<result name="success">/search.jsp</result>
     		<result name="error">error.jsp</result>
     	</action>
+    	<action name="findpass" class="FindPassAction">
+			<result name="success">/changepass.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="input">/forgetPassword.jsp</result>
+		</action>
+		<action name="changepass" class="ChangePassAction">
+		<result name="success">/Welcome.jsp</result>
+		<result name="change">/changepass.jsp</result>
+		<result name="input">/changepass.jsp</result>
+		</action>
 	</package>
 </struts>

@@ -14,10 +14,14 @@
 		targetForm.action = "login!execute";
 
 	}
-	function forgetpassword() {
-		targetForm = document.form[0];
+	function forgetPassword() {
+		targetForm = document.forms[0];
 		targetForm.action = "login!forgetPassword";
 
+	}
+	function changepass() {
+		targetForm = document.forms[0];
+		targerForm.action = "login!changepass";
 	}
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=GBK">
@@ -29,10 +33,9 @@
 	<s:password name="password" label="密码" />
 	<s:submit value="登录" onClick="login()" />
 	<s:submit value="注册" onClick="regist()" />
-
-	<s:submit value="忘记密码" onClick="forgetpassword()" />
+	<s:submit value="忘记密码" onClick="forgetPassword()" />
+	
 	<s:reset value="重置" />
 </s:form>
-
 </body>
 </html>
