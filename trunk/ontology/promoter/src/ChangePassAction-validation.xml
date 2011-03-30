@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	
+	<field name="password">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>密码必填，4-25字母数字</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(\w{4,25})]]></param>
+			<message>4-25字母数字</message>
+		</field-validator>
+	</field>
+	<field name="repassword">
+		<field-validator type="fieldexpression" short-circuit="true">
+			<param name="expression"><![CDATA[repassword==password]]></param>
+			<message>确认密码与密码不相同</message>
+		</field-validator>
+	</field>
+
+</validators>
